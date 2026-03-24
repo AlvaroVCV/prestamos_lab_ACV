@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<div class='containert mt-5'>
+    <div class='alert alert-danger'>
+        <h1>Acceso denegado</h1>
+        <p>No tienes permisos para acceder a esta pagina</p>
+        <a href="{% url 'notebook_list' %}" class='btn btn-primary'>Volver al Listado</a>                          
+    </div>
+</div>
+{% endblock %}
